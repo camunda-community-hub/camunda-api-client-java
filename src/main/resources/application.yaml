@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: camunda-api-client-java
+
+camunda:
+  base-url: ${CAMUNDA_BASE_URL}
+  api-path: ${CAMUNDA_API_PATH:/v2}
+  auth:
+    token-url: ${CAMUNDA_TOKEN_URL:https://login.cloud.camunda.io/oauth/token}
+    client-id: ${CAMUNDA_CLIENT_ID}
+    client-secret: ${CAMUNDA_CLIENT_SECRET}
+    audience: ${CAMUNDA_AUDIENCE:zeebe.camunda.io}
+    scope: ${CAMUNDA_SCOPE:Zeebe}
+    refresh-skew: ${CAMUNDA_TOKEN_REFRESH_SKEW:PT30S}
+
